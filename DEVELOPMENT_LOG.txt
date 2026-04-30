@@ -25,25 +25,21 @@ Deployment: Vercel & GitHub
 
 3. CORE FEATURE IMPLEMENTATION (PHASE 2)
 --------------------------------------------------------------------------
-A. Dark Mode Infrastructure:
-   *   Updated 'index.css' with Tailwind 4 theme variables for dark mode.
-   *   Defined '--color-dark-bg' (#0A0A0A) and '--color-dark-surface' (#151515).
-   *   Added transition-colors to body for smooth switching.
+A. UI Refinement (Reversion to Light Mode):
+   *   Removed Dark Mode infrastructure to maintain a strict, high-contrast premium aesthetic.
+   *   Cleaned up 'index.css' by removing dark theme variables and '.dark' class overrides.
+   *   Simplified 'Navbar.tsx' by removing theme switching logic and toggles.
 
-B. Navigation & Theme Toggle:
-   *   Updated 'Navbar.tsx' with a stateful theme switcher.
-   *   Implemented persistence using 'localStorage' and 'matchMedia' (for system preferences).
-
-C. Data Architecture:
+B. Data Architecture:
    *   Created 'src/data/mockups.ts' to decouple UI from data.
    *   Defined 'Mockup' interface for type safety.
 
-D. Interactive Preview Modal:
+C. Interactive Preview Modal:
    *   Built 'PreviewModal.tsx' using Framer Motion (AnimatePresence).
    *   Added support for dynamic content, feature lists, and responsive layouts.
    *   Integrated modal triggers in the 'MockupGallery' component.
 
-E. Lead Generation (Contact Form):
+D. Lead Generation (Contact Form):
    *   Created 'ContactForm.tsx' with a premium two-column design.
    *   Implemented animated input fields and hover-sensitive buttons.
 
