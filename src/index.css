@@ -9,19 +9,11 @@
   --color-brand-primary: #111111;
   --color-brand-accent: #3B82F6;
   --color-brand-surface: #F8F8F8;
-
-  --color-dark-primary: #ffffff;
-  --color-dark-bg: #0A0A0A;
-  --color-dark-surface: #151515;
 }
 
 @layer base {
   body {
-    @apply font-sans text-brand-primary bg-white selection:bg-brand-accent/30 selection:text-brand-primary transition-colors duration-300;
-  }
-
-  .dark body {
-    @apply text-dark-primary bg-dark-bg;
+    @apply font-sans text-brand-primary bg-white selection:bg-brand-accent/30 selection:text-brand-primary;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -34,10 +26,6 @@
     @apply bg-white/70 backdrop-blur-md border border-white/20;
   }
   
-  .dark .glass {
-    @apply bg-dark-surface/70 border-white/5;
-  }
-
   .text-balance {
     text-wrap: balance;
   }

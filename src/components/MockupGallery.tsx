@@ -14,15 +14,15 @@ export default function MockupGallery() {
   };
 
   return (
-    <section className="py-24 bg-white dark:bg-dark-bg transition-colors duration-300" id="templates">
+    <section className="py-24 bg-white" id="templates">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 dark:text-white">World-Class <span className="text-brand-accent">Mockups</span> Ready to Deploy</h2>
-            <p className="text-gray-500 dark:text-gray-400 text-lg">Every mockup is hand-crafted to give you a head start on your next project. Professional layouts that save you hundreds of hours.</p>
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-6">World-Class <span className="text-brand-accent">Mockups</span> Ready to Deploy</h2>
+            <p className="text-gray-500 text-lg">Every mockup is hand-crafted to give you a head start on your next project. Professional layouts that save you hundreds of hours.</p>
           </div>
           <div className="flex gap-4">
-             <button className="flex items-center gap-2 font-bold text-gray-900 dark:text-gray-200 group hover:text-brand-accent transition-colors">
+             <button className="flex items-center gap-2 font-bold text-gray-900 group hover:text-brand-accent transition-colors">
                 View All Templates
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
              </button>
@@ -75,7 +75,7 @@ export default function MockupGallery() {
               </div>
               <div>
                  <div className="text-xs font-bold text-brand-accent uppercase tracking-widest mb-1">{mock.brand}</div>
-                 <h3 className="text-2xl font-bold dark:text-white group-hover:text-brand-accent transition-colors">{mock.title}</h3>
+                 <h3 className="text-2xl font-bold group-hover:text-brand-accent transition-colors">{mock.title}</h3>
               </div>
             </motion.div>
           ))}

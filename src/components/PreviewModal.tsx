@@ -27,13 +27,13 @@ export default function PreviewModal({ mockup, isOpen, onClose }: PreviewModalPr
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="relative w-full max-w-5xl bg-white dark:bg-dark-surface rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row max-h-[90vh]"
+            className="relative w-full max-w-5xl bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row max-h-[90vh]"
           >
             <button 
               onClick={onClose}
-              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/10 hover:bg-black/20 dark:bg-white/10 dark:hover:bg-white/20 transition-colors"
+              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/10 hover:bg-black/20 transition-colors"
             >
-              <X size={20} className="dark:text-white" />
+              <X size={20} />
             </button>
 
             {/* Left: Visual Preview */}
@@ -71,8 +71,8 @@ export default function PreviewModal({ mockup, isOpen, onClose }: PreviewModalPr
                 <span className="inline-block px-3 py-1 rounded-full bg-brand-accent/10 text-brand-accent text-[10px] font-bold uppercase tracking-widest mb-4">
                   {mockup.tag}
                 </span>
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-4 dark:text-white">{mockup.title}</h2>
-                <p className="text-gray-500 dark:text-gray-400 leading-relaxed">
+                <h2 className="text-3xl md:text-4xl font-extrabold mb-4">{mockup.title}</h2>
+                <p className="text-gray-500 leading-relaxed">
                   {mockup.description}
                 </p>
               </div>
@@ -81,7 +81,7 @@ export default function PreviewModal({ mockup, isOpen, onClose }: PreviewModalPr
                 <h4 className="font-bold text-sm uppercase tracking-wider text-gray-400">Key Features</h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {mockup.features.map((feature, i) => (
-                    <div key={i} className="flex items-center gap-2 text-sm font-medium dark:text-gray-200">
+                    <div key={i} className="flex items-center gap-2 text-sm font-medium">
                       <div className="p-1 rounded-full bg-emerald-500/10 text-emerald-500">
                         <Check size={14} />
                       </div>
@@ -92,11 +92,11 @@ export default function PreviewModal({ mockup, isOpen, onClose }: PreviewModalPr
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="flex-1 bg-brand-primary dark:bg-brand-accent text-white px-6 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform shadow-lg">
+                <button className="flex-1 bg-brand-primary text-white px-6 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform shadow-lg">
                   Get This Template
                   <ArrowRight size={18} />
                 </button>
-                <button className="flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-bold border-2 border-gray-100 dark:border-white/10 dark:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                <button className="flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-bold border-2 border-gray-100 hover:bg-gray-50 transition-colors">
                   <ExternalLink size={18} />
                   Live Demo
                 </button>
