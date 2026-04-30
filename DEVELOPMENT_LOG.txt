@@ -61,29 +61,29 @@ E. Lead Generation (Contact Form):
 *   Live URL: https://elite-commerce.vercel.app
 *   Deployment configured for automatic GitHub sync (CI/CD).
 
-6. TECHNICAL TOOLING & WORKFLOW
+6. TECHNICAL TOOLING & RATIONALE
 --------------------------------------------------------------------------
-The following tools were utilized to build, verify, and deploy this project:
+The following tools were selected to ensure a modern, scalable, and high-performance development lifecycle:
 
 A. CORE TECH STACK:
-   *   React 19: UI Framework (Concurrent rendering, Server Components ready).
-   *   Tailwind CSS 4.0: Styling engine with next-gen theme variables.
-   *   Vite 6.0: Ultra-fast build tool and HMR development server.
-   *   Framer Motion: Advanced orchestration for UI animations.
-   *   Lucide React: Premium svg icon library for consistent visual language.
-   *   TypeScript 5.0: Static type checking for robust code integrity.
+   *   React 19: Chosen for its cutting-edge concurrent rendering capabilities and improved performance hooks, ensuring a fluid user experience.
+   *   Tailwind CSS 4.0: Used to implement a highly customizable, utility-first design system with zero-runtime CSS overhead.
+   *   Vite 6.0: Selected as the build engine for its instantaneous Hot Module Replacement (HMR) and optimized production bundling.
+   *   Framer Motion: Utilized to orchestrate complex UI transitions and state-aware animations (like the Preview Modal).
+   *   Lucide React: Implemented for its lightweight, tree-shakeable SVG icons that maintain visual consistency across the app.
+   *   TypeScript 5.0: Used to enforce strict type safety, reducing runtime errors and improving developer productivity through better IDE tooling.
 
 B. DEVELOPMENT & AUTOMATION TOOLS:
-   *   Gemini CLI: Primary orchestration agent for codebase modifications.
-   *   PowerShell 7+: Execution environment for system-level commands.
-   *   Vercel CLI: Production-grade cloud deployment and hosting management.
-   *   Git: Distributed version control and repository management.
-   *   Formspree: Serverless backend for functional contact form handling.
+   *   Gemini CLI: Served as the primary autonomous agent for surgical code edits, project orchestration, and multi-step workflow execution.
+   *   PowerShell 7+: Provided a robust, cross-platform shell environment for executing build scripts and background processes.
+   *   Vercel CLI: Used for seamless production deployments and managing cloud-native environment configurations.
+   *   Git: Leveraged for granular version control, enabling safe experimentation and collaborative history tracking.
+   *   Formspree: Selected as a serverless form backend to provide immediate functionality without the need for a custom Node.js/Database setup.
 
 C. VERIFICATION UTILITIES:
-   *   TSC (TypeScript Compiler): Used for "no-emit" integrity checks.
-   *   NPM: Dependency management and script automation.
-   *   Shields.io: Dynamic badge generation for project documentation.
+   *   TSC (TypeScript Compiler): Employed as a "pre-flight" check to catch potential logic errors before deployment.
+   *   NPM: Used as the backbone for dependency management and orchestrating custom lifecycle scripts (lint, dev, build).
+   *   Shields.io: Used to provide visual metadata in the README, giving the repository a professional, production-ready aesthetic.
 
 7. TECHNICAL RECOMMENDATIONS FOR SCALE
 --------------------------------------------------------------------------
